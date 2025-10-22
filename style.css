@@ -1,0 +1,330 @@
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #FFFFF0; /* Ivory white */
+    color: #000;
+    line-height: 1.6;
+    padding: 1em;
+}
+
+.gradient-text{
+    background: linear-gradient(90deg, #000, #000069);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.container {
+    padding-bottom: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.highlight {
+  color: #FF5722;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
+}
+.highlight:hover {
+    color: #3F00FF;
+    transition:  0.3s ease;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #3F00FF;
+    transition: width 0.3s ease;
+}
+.highlight:hover::after {
+    width: 100%;
+}
+
+/* .hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+} */
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    max-width: 500px;
+}
+
+.hero-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* About */
+.about p {
+    color: #666;
+    font-size: 1rem;
+    max-width: 700px;
+}
+
+/* Work Experience */
+.job {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.job-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.job-info img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.job-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.job-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.badge {
+    background: #f2f2f2;
+    color: #000;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-left: 6px;
+}
+
+/* Education */
+.edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.edu-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.edu-info img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edu-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.edu-info p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Skills */
+.skills .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 1rem;
+}
+
+.tags span {
+    background-color: #1B1212;
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tags span:hover {
+    /* color: #d4f091;
+    border-color: #d1fd6b; */
+
+    background-color: rgba(70, 4, 192, 0.1);
+    color: #4604c0;
+    transform: scale(1.05);
+
+}
+
+/* Projects */
+.projects {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.proj {
+    background: #000;
+    font-size: 1.05rem;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.projects h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.projects p {
+    color: #666;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0.5rem auto;
+}
+
+/* Connection Icons  */
+.social-icons1{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: left;
+    margin-top: 0.75rem;
+}
+.social-icons1 a {
+    color: #808080;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+.social-icons1 a:hover {
+    color: #1545e1;
+    transform: scale(1.05);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 0.2rem;
+}
+
+.social-icons a {
+    color: #808080;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    body {
+        padding: 1.5rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .job,
+    .edu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date {
+        margin-top: 0.5rem;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-icons1 {
+        justify-content: center; /* center horizontally */
+    }
+}
+
+/* Footer */
+.footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    color: #888;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+
+/* Transition on load  */
+section {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
