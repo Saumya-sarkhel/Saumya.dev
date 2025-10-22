@@ -1,5 +1,5 @@
 
-/* Base Reset */
+/*==== Base Reset ======*/
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
 }
 
-/* Hero Section */
+/* ======= Hero Section =========*/
 .hero {
     display: flex;
     align-items: center;
@@ -84,7 +84,7 @@ body {
     cursor: pointer;
 }
 
-/* Section Headings */
+/* ====== Section Headings ====== */
 section h2 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -92,14 +92,14 @@ section h2 {
     margin-bottom: 0.75rem;
 }
 
-/* About */
+/* ======= About ======*/
 .about p {
     color: #666;
     font-size: 1rem;
     max-width: 700px;
 }
 
-/* Work Experience */
+/* ===== Work Experience ===== */
 .job {
     display: flex;
     justify-content: space-between;
@@ -144,7 +144,7 @@ section h2 {
     margin-left: 6px;
 }
 
-/* Education */
+/* ======= Education ========*/
 .edu-item {
     display: flex;
     justify-content: space-between;
@@ -175,7 +175,7 @@ section h2 {
     font-size: 0.9rem;
 }
 
-/* Skills */
+/* ======== Skills ====== */
 .skills .tags {
     display: flex;
     flex-wrap: wrap;
@@ -186,41 +186,31 @@ section h2 {
 
 .tags span {
     background-color: #1B1212;
-    color: #ffffff;
+    color: #fff;
     padding: 8px 14px;
     border-radius: 10px;
     font-weight: 500;
     font-size: 0.85rem;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.tags span:hover {
-    /* color: #d4f091;
-    border-color: #d1fd6b; */
 
-    background-color: rgba(70, 4, 192, 0.1);
-    color: #4604c0;
-    transform: scale(1.05);
 
-}
-
-/* Projects */
+/*====== Projects ======*/
 .projects {
     text-align: center;
     margin-top: 5rem;
 }
 
 .proj {
-    background: #000;
+    background: #1B1212;
     font-size: 1.05rem;
     color: #fff;
     border: none;
     padding: 15px 20px;
     border-radius: 10px;
     font-weight: 600;
-    cursor: pointer;
     margin-bottom: 1rem;
 }
 
@@ -236,7 +226,7 @@ section h2 {
     margin: 0.5rem auto;
 }
 
-/* Connection Icons  */
+/* ======== Connection Icons  ======= */
 .social-icons1{
     display: flex;
     gap: 1.5rem;
@@ -271,7 +261,7 @@ section h2 {
     transform: scale(1.05);
 }
 
-/* Responsive Design */
+/* ====== Responsive Design ======= */
 @media (max-width: 700px) {
 
     body {
@@ -306,7 +296,7 @@ section h2 {
     }
 }
 
-/* Footer */
+/* ======== Footer ========*/
 .footer {
     font-size: 12px;
     text-align: center;
@@ -317,7 +307,7 @@ section h2 {
 
 
 
-/* Transition on load  */
+/* ====== Transition on load  =======*/
 section {
     opacity: 0;
     transform: translateY(10px);
