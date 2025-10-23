@@ -11,7 +11,7 @@ body {
     background: #FFFFF0; /* Ivory white */
     color: #000;
     line-height: 1.6;
-    padding: 1em;
+    padding: 2em;
 }
 
 .gradient-text{
@@ -26,6 +26,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+
+
 
 /* ======= Hero Section =========*/
 .hero {
@@ -82,7 +84,12 @@ body {
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
+.hero-img img:hover {
+    transform: scale(1.05);
+}
+
 
 /* ====== Section Headings ====== */
 section h2 {
@@ -179,16 +186,17 @@ section h2 {
 .skills .tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 12px;
     margin-top: 1rem;
+    padding-bottom: 20px;
 }
 
 .tags span {
     background-color: #1B1212;
     color: #fff;
-    padding: 8px 14px;
-    border-radius: 10px;
+    padding: 1px 14px;
+    border-radius: 6px;
     font-weight: 500;
     font-size: 0.85rem;
     cursor: pointer;
@@ -208,9 +216,9 @@ section h2 {
     font-size: 1.05rem;
     color: #fff;
     border: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 450;
     margin-bottom: 1rem;
 }
 
