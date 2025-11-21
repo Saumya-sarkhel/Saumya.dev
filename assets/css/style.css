@@ -29,7 +29,102 @@ body {
 
 
 
+/* ===== THEME CHANGE =======  */
+
+
+/* Base body styling (default: light theme) */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background: #fff;
+    color: #000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background: #1B1212; /* Dark background */
+    color: #e0e0e0;  /* Light text */
+}
+
+/* Theme toggle button (applies to SVG icon via currentColor) */
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-size: 23px;
+    color: #000; /* Light mode: moon icon color is black; sun icon color is black */
+    background: none;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Button hover effect */
+#theme-toggle:hover {
+    transform: scale(1.07);
+}
+
+/* In dark mode, make icon white (moon or sun via currentColor) */
+body.dark-theme #theme-toggle {
+    color: #ffff42 ;
+    background: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+
+/* Dark theme text adjustments */
+body.dark-theme .hero-text p,
+body.dark-theme section h2 {
+  color: #bbb;
+}
+
+/* Social icons  */
+body.dark-theme .social-icons1 a:hover,
+body.dark-theme .social-icons a:hover {
+  color: #ffff42 ;
+
+}
+
+
+/* Name underline  */
+body.dark-theme .highlight:hover {
+  color: #ffff42 ;
+}
+body.dark-theme .highlight::after {
+    background: #ffff42 ;
+}
+
+
+body.dark-theme .gradient-text {
+    color: #FFFFF0;
+}
+
+body.dark-theme .tags span,
+body.dark-theme .proj {
+    background-color: #FFFFF0;
+    color: #121212;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
 /* ======= Hero Section =========*/
+
 .hero {
     display: flex;
     align-items: center;
@@ -247,7 +342,7 @@ section h2 {
     transition: color 0.3s;
 }
 .social-icons1 a:hover {
-    color: #1545e1;
+    color: #000000;
     transform: scale(1.05);
 }
 
