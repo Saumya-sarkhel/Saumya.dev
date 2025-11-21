@@ -37,6 +37,9 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     background: #fff;
     color: #000;
+    /* line-height: 1.6;
+    padding: 2em;
+    font-size: 120%;  */
 }
 
 /* Dark Theme */
@@ -132,6 +135,7 @@ body.dark-theme .proj {
     gap: 2rem;
     flex-wrap: wrap;
     padding-top: 2rem;
+    font-size: 1.3rem;
 }
 
 .highlight {
@@ -167,7 +171,7 @@ body.dark-theme .proj {
 } */
 
 .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #333;
     margin-top: 0.5rem;
     max-width: 500px;
@@ -197,7 +201,7 @@ section h2 {
 /* ======= About ======*/
 .about p {
     color: #666;
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 700px;
 }
 
@@ -223,12 +227,12 @@ section h2 {
 }
 
 .job-info h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
 .job-info p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #666;
 }
 
@@ -268,13 +272,13 @@ section h2 {
 }
 
 .edu-info h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
 .edu-info p {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 /* ======== Skills ====== */
@@ -293,7 +297,7 @@ section h2 {
     padding: 1px 14px;
     border-radius: 6px;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 1rem;
     cursor: pointer;
     border: 1px solid transparent;
 }
@@ -308,23 +312,23 @@ section h2 {
 
 .proj {
     background: #1B1212;
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     color: #fff;
     border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-weight: 450;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 .projects h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .projects p {
     color: #666;
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 600px;
     margin: 0.5rem auto;
 }
@@ -338,7 +342,7 @@ section h2 {
 }
 .social-icons1 a {
     color: #808080;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 .social-icons1 a:hover {
@@ -372,6 +376,7 @@ section h2 {
     }
 
     .hero {
+        top: 1rem;
         flex-direction: column;
         text-align: center;
     }
@@ -401,7 +406,7 @@ section h2 {
 
 /* ======== Footer ========*/
 .footer {
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     padding: 10px;
     color: #888;
