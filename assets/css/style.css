@@ -365,7 +365,7 @@ section h2 {
 .project-card {
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     overflow: hidden;
     transition: all 0.4s ease;
     border: 1px solid rgba(0,0,0,0.05);
@@ -463,12 +463,12 @@ section h2 {
 
 /* Dark theme overrides */
 body.dark-theme .project-card {
-    background: #2a1f1f;
-    border-color: rgba(255,255,255,0.05);
+    background: #1B1212;
+    border-color: rgba(255, 254, 254, 0.05);
 }
 body.dark-theme .project-content h3 { color: #fff; }
 body.dark-theme .project-desc { color: #bbb; }
-body.dark-theme .project-tech span { background: #3d2b2b; color: #eee; }
+body.dark-theme .project-tech span { background: #f0f0f0; color: #000000; }
 
 /* ====== Responsive Design Update ======= */
 
