@@ -15,7 +15,7 @@ body {
 }
 
 .gradient-text{
-    background: linear-gradient(90deg, #000, #000069);
+    background: #000;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -24,7 +24,7 @@ body {
 }
 .container {
     padding-bottom: 80px;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -32,15 +32,11 @@ body {
 
 /* ===== THEME CHANGE =======  */
 
-
 /* Base body styling (default: light theme) */
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
-    background: #fff;
+    background: #FFFFF0;
     color: #000;
-    /* line-height: 1.6;
-    padding: 2em;
-    font-size: 120%;  */
 }
 
 /* Dark Theme */
@@ -64,7 +60,7 @@ body.dark-theme {
     justify-content: center;
     transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
     font-size: 23px;
-    color: #000; /* Light mode: moon icon color is black; sun icon color is black */
+    color: #000; /* Light mode: moon icon color is black */
     background: none;
     padding: 0;
     line-height: 1;
@@ -142,7 +138,6 @@ body.dark-theme .proj {
 .highlight {
   color: #FF5722;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
   cursor: pointer;
   transition: color 0.3s ease;
   position: relative;
@@ -186,14 +181,11 @@ body.dark-theme .proj {
     border-radius: 30px 30px 5px 30px;
     object-fit: cover;
     display: block;
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
-    border-color: #ffff42;
+    border-color: #1b1515;
 }
 
-body.dark-theme .hero-img img {
-    border-color: #ffff42;
-}
 
 /* ====== Section Headings ====== */
 section h2 {
@@ -290,7 +282,7 @@ section h2 {
 .skills .tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 8px;
     margin-top: 1.5rem;
     padding-bottom: 20px;
@@ -302,7 +294,7 @@ section h2 {
     padding: 1px 14px;
     border-radius: 6px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.05rem;
     cursor: pointer;
     border: 1px solid transparent;
 }
@@ -338,9 +330,9 @@ section h2 {
     margin: 0.5rem auto;
 }
 
+
+
 /* ====== Projects - NEW CARD STYLE ====== */
-
-
 /* ====== Projects Section Layout ====== */
 .projects {
     text-align: left;
@@ -378,7 +370,7 @@ section h2 {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(33, 31, 179, 0.12);
+    box-shadow: 0 20px 40px rgba(33, 31, 179, 0.52);
 }
 
 .project-image {
@@ -397,7 +389,7 @@ section h2 {
 .project-links {
     position: absolute;
     inset: 0; /* Cover whole image */
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(47, 44, 44, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,7 +416,7 @@ section h2 {
     transition: 0.3s;
 }
 
-.btn-demo { background: #3b82f6; }
+.btn-demo { background: #2b71e2; }
 .btn-github { background: #1a1a1a; }
 
 .project-content {
@@ -472,6 +464,9 @@ body.dark-theme .project-content h3 { color: #fff; }
 body.dark-theme .project-desc { color: #bbb; }
 body.dark-theme .project-tech span { background: #f0f0f0; color: #000000; }
 
+
+
+
 /* ====== Responsive Design Update ======= */
 
 /* Tablets (2 columns) */
@@ -500,7 +495,6 @@ body.dark-theme .project-tech span { background: #f0f0f0; color: #000000; }
         justify-content: center ;
     }
 }
-
 
 
 
@@ -635,8 +629,6 @@ body.dark-theme .project-tech span { background: #f0f0f0; color: #000000; }
         font-size: 1rem;
     }
 }
-
-
 
 
 /* ====== Transition on load  =======*/
