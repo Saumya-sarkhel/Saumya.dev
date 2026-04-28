@@ -359,7 +359,7 @@ section h2 {
 .project-card {
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     overflow: hidden;
     transition: all 0.4s ease;
     border: 1px solid rgba(0,0,0,0.05);
@@ -370,7 +370,7 @@ section h2 {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(33, 31, 179, 0.52);
+    box-shadow: 0 20px 40px rgba(33, 31, 179, 0.15);
 }
 
 .project-image {
@@ -459,6 +459,9 @@ section h2 {
 body.dark-theme .project-card {
     background: #1B1212;
     border-color: rgba(255, 254, 254, 0.05);
+}
+body.dark-theme .project-card:hover {
+    box-shadow: 0 20px 40px rgba(33, 31, 179, 0.10);
 }
 body.dark-theme .project-content h3 { color: #fff; }
 body.dark-theme .project-desc { color: #bbb; }
